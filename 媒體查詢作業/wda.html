@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+      transition: 1s;
+      font-family: "微軟正黑體";
+    }
+
+    .container {
+      width: 100%;
+      padding: 0px;
+      margin: auto;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .row {
+      border-bottom: 1px solid #000;
+      padding: 30px;
+
+      flex-direction: column;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+    }
+
+    #wda,
+    #html,
+    #css,
+    #js,
+    #jq,
+    #bs,
+    #sass,
+    #vue {
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+
+    @media(min-width:992px) {
+      .row {
+        width: 31%;
+        position: relative;
+        border-bottom: none
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      p {
+        display: none;
+      }
+
+      #wda {
+        width: 18%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #html {
+        width: 13%;
+        position: absolute;
+        left: 5%;
+        top: 0%;
+      }
+
+      #html::after {
+        content: '';
+        position: absolute;
+        width: 468px;
+        height: 38px;
+        top: 93%;
+        left: 88%;
+        rotate: 18deg;
+        /* background-color: #ffa; */
+        border-top: 1px solid #000;
+      }
+
+      #css {
+        width: 13%;
+        position: absolute;
+        left: 25%;
+        top: -5%;
+      }
+
+      #css::after {
+        content: '';
+        position: absolute;
+        width: 168px;
+        height: 65px;
+        top: 85%;
+        left: 74%;
+        rotate: 36deg;
+        /* background-color: #ffa; */
+        border-top: 1px solid #000;
+      }
+
+      #js {
+        width: 13%;
+        position: absolute;
+        left: 12%;
+        top: 35%;
+      }
+
+      #js::after {
+        content: '';
+        position: absolute;
+        width: 164px;
+        height: 65px;
+        top: 68%;
+        left: 187%;
+        rotate: -38deg;
+        /* background-color: #ffa; */
+        border-top: 1px solid #000;
+      }
+
+      #jq {
+        width: 13%;
+        position: absolute;
+        left: 25%;
+        top: 60%;
+      }
+
+      #jq::after {
+        content: '';
+        position: absolute;
+        width: 298px;
+        height: 65px;
+        top: -33%;
+        left: 4%;
+        rotate: -9deg;
+        /* background-color: #ffa; */
+        border-top: 1px solid #000;
+      }
+
+      #bs {
+        width: 15%;
+        position: absolute;
+        left: 65%;
+        top: 2%;
+      }
+
+      #bs::after {
+        content: '';
+        position: absolute;
+        width: 223px;
+        height: 65px;
+        top: 78%;
+        left: -48%;
+        rotate: -34deg;
+        /* background-color: #ffa; */
+        border-top: 1px solid #000;
+      }
+
+
+      #sass {
+        width: 13%;
+        position: absolute;
+        left: 85%;
+        top: 30%;
+      }
+
+      #sass::after {
+        content: '';
+        position: absolute;
+        width: 499px;
+        height: 65px;
+        top: 56%;
+        left: -202%;
+        rotate: 0deg;
+        /* background-color: #ffa; */
+        border-top: 1px solid #000;
+      }
+
+      #vue {
+        width: 13%;
+        position: absolute;
+        left: 75%;
+        top: 60%;
+      }
+
+      #vue::after {
+        content: '';
+        position: absolute;
+        width: 346px;
+        height: 65px;
+        top: -5%;
+        left: -138%;
+        rotate: 20deg;
+        /* background-color: #ffa; */
+        border-top: 1px solid #000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="italic"></div>
+    <div id="wda" class="row" style="text-align: center;">
+      <img src="./img/wda.png">
+      <br>
+      <h1>泰山職訓局</h1>
+      <h3>從零開始的網頁設計課程</h3>
+      <span>轉職網頁開發人員　掌握就業必備職能<br>
+        由淺入深學習技術　強化職場的競爭力</span>
+    </div>
+
+    <div id="html" class="row">
+      <img src="./img/html.png">
+      <h3>HTML</h3>
+      <p>HTML是一種基礎技術，常與CSS、JavaScript一起被眾多網站用於設計網頁、網頁應用程式以及行動應用程式的使用者介面。網頁瀏覽器可以讀取HTML檔案，並將其彩現成視覺化網頁。</p>
+    </div>
+
+    <div id="css" class="row">
+      <img src="./img/css.png">
+      <h3>CSS3</h3>
+      <p>CSS不僅可以靜態地修飾網頁，還可以配合各種手稿語言動態地對網頁各元素進行格式化。CSS 能夠對網頁中元素位置的排版進行像素級精確控制，支援幾乎所有的字型字號樣式，擁有對網頁物件和模型樣式編輯的能力。</p>
+    </div>
+
+    <div id="js" class="row">
+      <img src="./img/js.png">
+      <h3>JavaScript</h3>
+      <p>JavaScript 是一種腳本，也能稱它為程式語言，可以讓你在網頁中實現出複雜的功能。當網頁不只呈現靜態的內容，另外提供了像是：內容即時更新、地圖交動、繪製 2D/3D 圖形，影片播放控制……等，你就可以大膽地認為
+        JavaScript 已經參與其中。</p>
+    </div>
+
+    <div id="jq" class="row">
+      <img src="./img/jq.png">
+      <h3>jQuery</h3>
+      <p>jQuery是一套跨瀏覽器的JavaScript函式庫，用於簡化HTML與JavaScript之間的操作。目前由Dave
+        Methvin領導的團隊進行開發。全球前10,000個存取最高的網站中，有65%使用了jQuery，是曾經最受歡迎的JavaScript函式庫。</p>
+    </div>
+
+    <div id="bs" class="row">
+      <img src="./img/bs.png">
+      <h3>Bootstrap</h3>
+      <p>Bootstrap是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，指的是展現給終端使用者的介面。與之對應的「後端」是在伺服器上面執行的代碼）</p>
+    </div>
+
+    <div id="sass" class="row">
+      <img src="./img/sass.png">
+      <h3>Sass</h3>
+      <p>在開發最初版本之後，Weizenbaum和Chris Eppstein繼續通過SassScript來繼續擴充Sass的功能。SassScript是一個在Sass檔案中使用的小型手稿語言。</p>
+    </div>
+
+    <div id="vue" class="row">
+      <img src="./img/vue.png">
+      <h3>Vue.js</h3>
+      <p>Vue.js是一個用於建立使用者介面的開源MVVM前端JavaScript框架，也是一個建立單頁應用的Web應用框架。Vue.js由尤雨溪建立，由他和其他活躍的核心團隊成員維護。</p>
+    </div>
+  </div>
+</body>
+
+</html>
